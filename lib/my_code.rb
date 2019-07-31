@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 
+=======
+# Your Code Here
+>>>>>>> 92bda05e09d8071af99f042fbda3b225129196d0
 #describe 'my own map' do
 #  it "returns an array with all values made negative" do
 #    expect(map([1, 2, 3, -9]){|n| n * -1}).to eq([-1, -2, -3, 9])
 #  end
 def map(array)
+<<<<<<< HEAD
   arr = []
   counter = 0
 
@@ -13,6 +18,10 @@ def map(array)
   end
 
  arr
+=======
+
+array.map { |e| yield(e)}
+>>>>>>> 92bda05e09d8071af99f042fbda3b225129196d0
 end
 
 
@@ -30,6 +39,7 @@ end
 #  end
 #end
 
+<<<<<<< HEAD
 
 
 def reduce(array, start = nil)
@@ -57,12 +67,21 @@ end
 # end
 
 
+=======
+>>>>>>> 92bda05e09d8071af99f042fbda3b225129196d0
 #describe 'my own reduce' do
 #  it "returns a running total when not given a starting point" do
 #    source_array = [1,2,3]
 #    expect(reduce(source_array){|memo, n| memo + n}).to eq(6)
 #  end
 
+<<<<<<< HEAD
+=======
+def reduce(array, start = 0)
+
+  array.reduce(start) {|m, e| yield(m, e)}
+end
+>>>>>>> 92bda05e09d8071af99f042fbda3b225129196d0
 #  it "returns a running total when given a starting point" do
 #    source_array = [1,2,3]
 #    starting_point = 100
